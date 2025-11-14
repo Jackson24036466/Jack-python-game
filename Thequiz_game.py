@@ -5,13 +5,15 @@ from tkinter import*
 
 questions = ("Which animal is a fish?: ",
             "which country is in africa?: ",
-            "which animal has two legs?: ")
+            "which animal has two legs?: "
+            "what color is the sky?: ")
 
 options = (("A. Whale", "B. Crocodile", "C. Lion", "D. Dog"),
             ("A. German", "B. UK", "C. Malawi", "D. France"),
-          ("A. Dog", "B. Chicken", "C. Pig", "D. Donkey"))
+          ("A. Dog", "B. Chicken", "C. Pig", "D. Donkey"),
+          ("A. Green", "B. Yellow", "C. Black", "D. Blue"))
 
-answers = ("A", "C","B",)
+answers = ("A", "C", "B", "D",)
 guesses = []
 score = 0
 question_num = 0
@@ -26,7 +28,7 @@ for question in questions:
     guesses.append(guess)
     if guess == answers[question_num]:
         score += 1
-        print("whaalaaa you are right!")
+        print("Yes... right!")
     else:
         print("Wrong....!")
         print(f"{answers[question_num]} is the correct answer")
@@ -49,6 +51,6 @@ print()
 #Score Calculator at the end of the quiz
 
 score = int(score / len(questions) * 100)
-
 print(f"Your score is: {score}%")
+
 
