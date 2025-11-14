@@ -4,12 +4,14 @@
 from tkinter import*
 
 questions = ("Which animal is a fish?: ",
-            "which country is in africa?: ",)
+            "which country is in africa?: ",
+            "which animal has two legs?: ")
 
 options = (("A. Whale", "B. Crocodile", "C. Lion", "D. Dog"),
-            ("A. German", "B. UK", "C. Malawi", "D. France"),)
+            ("A. German", "B. UK", "C. Malawi", "D. France"),
+          ("A. Dog", "B. Chicken", "C. Pig", "D. Donkey"))
 
-answers = ("A", "C",)
+answers = ("A", "C","B",)
 guesses = []
 score = 0
 question_num = 0
@@ -49,3 +51,4 @@ print()
 score = int(score / len(questions) * 100)
 
 print(f"Your score is: {score}%")
+
