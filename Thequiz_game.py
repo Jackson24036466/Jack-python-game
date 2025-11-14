@@ -2,6 +2,7 @@
 # at the end a calculator will score your quiz and display the percentage score
 
 from tkinter import*
+#GUI not uploading, text file uploading properly, trying to import it from here as part of GitHub Commits
 
 questions = ("Which animal is a fish?: ",
             "which country is in africa?: ",
@@ -52,5 +53,6 @@ print()
 
 score = int(score / len(questions) * 100)
 print(f"Your score is: {score}%")
+
 
 
