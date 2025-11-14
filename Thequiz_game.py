@@ -1,6 +1,8 @@
 #the quiz assignemt
 # at the end a calculator will score your quiz and display the percentage score
 
+from tkinter import*
+
 questions = ("Which animal is a fish?: ",
             "which country is in africa?: ",)
 
@@ -45,4 +47,5 @@ print()
 #Score Calculator at the end of the quiz
 
 score = int(score / len(questions) * 100)
+
 print(f"Your score is: {score}%")
